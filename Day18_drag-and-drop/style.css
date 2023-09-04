@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(145deg, #a4508b, #5f0a87);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background: white;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+.target {
+    height: 100%;
+    width: 100%;
+    background: url(bg.jpeg);
+}
+
+.dragging {
+    border: 3px solid white;
+}
