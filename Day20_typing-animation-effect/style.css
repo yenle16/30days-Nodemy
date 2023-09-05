@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #96ee1c;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: #060802;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing-wrapper {
+    margin: 200px auto;
+    font-family: monospace;
+}
+
+p {
+    color: var(--primary-color);
+    font-size: 70px;
+    overflow: hidden;
+    text-shadow: 0 0 100px var(--primary-color);
+    font-weight: 600;
+    white-space: nowrap;
+    /* animation: typing 3s steps(30) infinite, blink 1s infinite; */
+}
+
+@keyframes typing {
+    0%,
+    100% {
+        width: 0%;
+    }
+    80% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        border-right: 8px solid var(--primary-color);
+    }
+    50% {
+        border-right: 8px solid transparent;
+    }
+}
