@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.tool {
+    background: steelblue;
+    display: flex;
+    align-items: center;
+}
+
+.tool>* {
+    height: 40px;
+    width: 40px;
+    background: white;
+    margin: 5px;
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#save {
+    margin-left: auto;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
