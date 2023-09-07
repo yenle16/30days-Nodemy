@@ -1,0 +1,97 @@
+/* :root {
+    --primary-color-light: #0a6cf1;
+    --primary-color-dark: #4daf54;
+    --box-color-light: #dadada;
+    --box-color-dark: #3b3a3b;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.25s;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    --primary-color: #0a6cf1;
+    --background-color: #eee;
+    --background-box: #dadada;
+    --color-box: #3b3b3b;
+    background: var(--background-color);
+    color: var(--primary-color);
+}
+
+body.dark {
+    --primary-color: #4daf54;
+    --background-color: #2d2c2d;
+    --background-box: #3b3b3b;
+    --color-box: #f6f6f6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.switch-wp {
+    background: var(--primary-color);
+    width: 90px;
+    border-radius: 20px;
+}
+
+.switch-wp label {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    display: block;
+    transition: 0.5s;
+}
+
+.switch-wp input:checked+label {
+    margin-left: 30px;
+    transform: translateX(100%);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.content .box {
+    padding: 50px;
+    color: black;
+    background: #dadada;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.lst-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.lst-btn button {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: var(--primary-color);
+    color: white;
+    padding: 5px;
+}
